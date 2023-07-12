@@ -185,7 +185,6 @@ def run_server():
                     label=None
                 )
             )
-            print(plaintext.decode())
             if "~~" in plaintext.decode():
                 if "Copied" in plaintext.decode() or "Pasted" in plaintext.decode() and config["clipboard_monitor"]:
                     update_extra_data_text(plaintext.decode()[5:])
